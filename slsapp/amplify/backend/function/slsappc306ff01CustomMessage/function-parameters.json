@@ -1,0 +1,14 @@
+{
+    "trigger": true,
+    "modules": [
+        "verification-link"
+    ],
+    "parentResource": "slsappc306ff01",
+    "functionName": "slsappc306ff01CustomMessage",
+    "parentStack": "auth",
+    "triggerEnvs": "[{\"key\":\"RESOURCENAME\",\"value\":\"resourceName\"}]",
+    "triggerTemplate": "CustomMessage.json.ejs",
+    "roleName": "slsappc306ff01CustomMessage",
+    "skipEdit": true,
+    "resourceName": "slsappc306ff01CustomMessage"
+}

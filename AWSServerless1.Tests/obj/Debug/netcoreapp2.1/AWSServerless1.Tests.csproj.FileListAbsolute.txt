@@ -1,0 +1,16 @@
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\bin\Debug\netcoreapp2.1\AWSServerless1.Tests.deps.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\bin\Debug\netcoreapp2.1\AWSServerless1.Tests.runtimeconfig.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\bin\Debug\netcoreapp2.1\AWSServerless1.Tests.runtimeconfig.dev.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\bin\Debug\netcoreapp2.1\AWSServerless1.Tests.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\bin\Debug\netcoreapp2.1\AWSServerless1.Tests.pdb
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\bin\Debug\netcoreapp2.1\AWSServerless1.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\bin\Debug\netcoreapp2.1\AWSServerless1.pdb
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\obj\Debug\netcoreapp2.1\AWSServerless1.Tests.csprojAssemblyReference.cache
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\obj\Debug\netcoreapp2.1\AWSServerless1.Tests.AssemblyInfoInputs.cache
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\obj\Debug\netcoreapp2.1\AWSServerless1.Tests.AssemblyInfo.cs
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\obj\Debug\netcoreapp2.1\AWSServerless1.Tests.csproj.CopyComplete
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\obj\Debug\netcoreapp2.1\AWSServerless1.Tests.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless1.Tests\obj\Debug\netcoreapp2.1\AWSServerless1.Tests.pdb

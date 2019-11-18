@@ -1,0 +1,10 @@
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaDynamoDb\bin\Debug\netcoreapp2.1\AWSLambdaDynamoDb.deps.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaDynamoDb\bin\Debug\netcoreapp2.1\AWSLambdaDynamoDb.runtimeconfig.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaDynamoDb\bin\Debug\netcoreapp2.1\AWSLambdaDynamoDb.runtimeconfig.dev.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaDynamoDb\bin\Debug\netcoreapp2.1\AWSLambdaDynamoDb.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaDynamoDb\bin\Debug\netcoreapp2.1\AWSLambdaDynamoDb.pdb
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaDynamoDb\obj\Debug\netcoreapp2.1\AWSLambdaDynamoDb.csprojAssemblyReference.cache
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaDynamoDb\obj\Debug\netcoreapp2.1\AWSLambdaDynamoDb.AssemblyInfoInputs.cache
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaDynamoDb\obj\Debug\netcoreapp2.1\AWSLambdaDynamoDb.AssemblyInfo.cs
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaDynamoDb\obj\Debug\netcoreapp2.1\AWSLambdaDynamoDb.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaDynamoDb\obj\Debug\netcoreapp2.1\AWSLambdaDynamoDb.pdb

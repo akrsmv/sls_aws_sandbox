@@ -1,0 +1,49 @@
+{
+    "paths": [
+        {
+            "name": "/people",
+            "lambdaFunction": "mainlambda",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/coins",
+            "lambdaFunction": "mainlambda",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/jobs",
+            "lambdaFunction": "mainlambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "slsappapi",
+    "apiName": "slsappapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "mainlambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-slsapp-featureone-104314-authRole",
+        "unAuthRoleName": "amplify-slsapp-featureone-104314-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "mainlambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "5a143602"
+}

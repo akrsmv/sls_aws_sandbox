@@ -1,0 +1,26 @@
+﻿{
+  "Comment": "HelloStepFromDotNet",
+  "StartAt": "Hello",
+  "States": {
+    "Hello": {
+      "Type": "Task",
+      "Resource": "${HelloTask.Arn}",
+      "Next": "WaitToActivate"
+    },
+    "WaitToActivate": {
+      "Type": "Wait",
+      "SecondsPath": "$.WaitInSeconds",
+      "Next": "RecordVisit"
+    },
+    "RecordVisit": {
+      "Type": "Task",
+      "Resource": "${RecordVisitTask.Arn}",
+      "Next": "ByeBye"
+    },
+    "ByeBye": {
+      "Type": "Task",
+      "Resource": "${ByeByeTask.Arn}",
+      "End": true
+    }
+  }
+}

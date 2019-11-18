@@ -1,0 +1,10 @@
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless2\bin\Release\netcoreapp2.1\rhel.7.2-x64\AWSServerless2.deps.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless2\bin\Release\netcoreapp2.1\rhel.7.2-x64\AWSServerless2.runtimeconfig.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless2\bin\Release\netcoreapp2.1\rhel.7.2-x64\AWSServerless2.runtimeconfig.dev.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless2\bin\Release\netcoreapp2.1\rhel.7.2-x64\AWSServerless2.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless2\bin\Release\netcoreapp2.1\rhel.7.2-x64\AWSServerless2.pdb
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless2\obj\Release\netcoreapp2.1\rhel.7.2-x64\AWSServerless2.csprojAssemblyReference.cache
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless2\obj\Release\netcoreapp2.1\rhel.7.2-x64\AWSServerless2.AssemblyInfoInputs.cache
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless2\obj\Release\netcoreapp2.1\rhel.7.2-x64\AWSServerless2.AssemblyInfo.cs
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless2\obj\Release\netcoreapp2.1\rhel.7.2-x64\AWSServerless2.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSServerless2\obj\Release\netcoreapp2.1\rhel.7.2-x64\AWSServerless2.pdb

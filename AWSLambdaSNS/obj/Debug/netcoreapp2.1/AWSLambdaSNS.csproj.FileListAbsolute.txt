@@ -1,0 +1,10 @@
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaSNS\bin\Debug\netcoreapp2.1\AWSLambdaSNS.deps.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaSNS\bin\Debug\netcoreapp2.1\AWSLambdaSNS.runtimeconfig.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaSNS\bin\Debug\netcoreapp2.1\AWSLambdaSNS.runtimeconfig.dev.json
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaSNS\bin\Debug\netcoreapp2.1\AWSLambdaSNS.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaSNS\bin\Debug\netcoreapp2.1\AWSLambdaSNS.pdb
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaSNS\obj\Debug\netcoreapp2.1\AWSLambdaSNS.csprojAssemblyReference.cache
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaSNS\obj\Debug\netcoreapp2.1\AWSLambdaSNS.AssemblyInfoInputs.cache
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaSNS\obj\Debug\netcoreapp2.1\AWSLambdaSNS.AssemblyInfo.cs
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaSNS\obj\Debug\netcoreapp2.1\AWSLambdaSNS.dll
+C:\Users\akrsmv\Source\Repos\AWSServerless1\AWSLambdaSNS\obj\Debug\netcoreapp2.1\AWSLambdaSNS.pdb

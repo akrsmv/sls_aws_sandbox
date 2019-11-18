@@ -1,0 +1,187 @@
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+  "Transform" : "AWS::Serverless-2016-10-31",
+  "Description" : "An AWS Serverless Application.",
+
+  "Parameters" : {
+    "HashKeyElementName" : {
+      "Description" : "HashType PrimaryKey Name",
+      "Type" : "String",
+      "AllowedPattern" : "[a-zA-Z0-9]*",
+      "MinLength": "1",
+      "MaxLength": "2048",
+      "ConstraintDescription" : "must contain only alphanumberic characters"
+    },
+
+    "HashKeyElementType" : {
+      "Description" : "HashType PrimaryKey Type",
+      "Type" : "String",
+      "Default" : "S",
+      "AllowedPattern" : "[S|N]",
+      "MinLength": "1",
+      "MaxLength": "1",
+      "ConstraintDescription" : "must be either S or N"
+    },
+
+    "ReadCapacityUnits" : {
+      "Description" : "Provisioned read throughput",
+      "Type" : "Number",
+      "Default" : "5",
+      "MinValue": "5",
+      "MaxValue": "10000",
+      "ConstraintDescription" : "must be between 5 and 10000"
+    },
+
+    "WriteCapacityUnits" : {
+      "Description" : "Provisioned write throughput",
+      "Type" : "Number",
+      "Default" : "10",
+      "MinValue": "5",
+      "MaxValue": "10000",
+      "ConstraintDescription" : "must be between 5 and 10000"
+    }
+  },
+
+  "Resources" : {
+
+	"incommingCompansationsDynamoDBTable" : {
+      "Type" : "AWS::DynamoDB::Table",
+      "Properties" : {
+        "AttributeDefinitions": [ { 
+          "AttributeName" : {"Ref" : "HashKeyElementName"},
+          "AttributeType" : {"Ref" : "HashKeyElementType"}
+        } ],
+        "KeySchema": [
+          { "AttributeName": {"Ref" : "HashKeyElementName"}, "KeyType": "HASH" }
+        ],
+        "ProvisionedThroughput" : {
+          "ReadCapacityUnits" : {"Ref" : "ReadCapacityUnits"},
+          "WriteCapacityUnits" : {"Ref" : "WriteCapacityUnits"}
+        }                
+      }
+    },
+
+
+    "HelloTask" : {
+        "Type" : "AWS::Lambda::Function",
+        "Properties" : {
+            "Handler" : "AWSServerless1::AWSServerless1.StepFunctionTasks::Hello",
+            "Role"    : {"Fn::GetAtt" : [ "LambdaRole", "Arn"]},
+            "Runtime" : "dotnetcore2.1",
+            "MemorySize" : 256,
+            "Timeout" : 30,
+            "Code" : {
+                "S3Bucket" : "",
+                "S3Key" : ""
+            }
+        }
+    },
+
+    "ByeByeTask" : {
+        "Type" : "AWS::Lambda::Function",
+        "Properties" : {
+            "Handler" : "AWSServerless1::AWSServerless1.StepFunctionTasks::ByeBye",            
+            "Role"    : {"Fn::GetAtt" : [ "LambdaRole", "Arn"]},
+            "Runtime" : "dotnetcore2.1",
+            "MemorySize" : 256,
+            "Timeout" : 30,
+            "Code" : {
+                "S3Bucket" : "",
+                "S3Key" : ""
+            }
+        }
+    },
+	
+	"RecordVisitTask" : {
+        "Type" : "AWS::Lambda::Function",
+        "Properties" : {
+            "Handler" : "AWSServerless1::AWSServerless1.StepFunctionTasks::RecordVisit",            
+            "Role"    : {"Fn::GetAtt" : [ "LambdaRole", "Arn"]},
+            "Runtime" : "dotnetcore2.1",
+            "MemorySize" : 256,
+            "Timeout" : 30,
+            "Code" : {
+                "S3Bucket" : "",
+                "S3Key" : ""
+            },
+			"Environment":{"Variables" : {"DB":"vs-serverless-app-incommingCompansationsDynamoDBTable-1WZ2X0RBEFB2X"}}
+        }
+    },
+
+    "StateMachine" : {
+        "Type" : "AWS::StepFunctions::StateMachine",
+        "Properties": {
+            "RoleArn": { "Fn::GetAtt": [ "StateMachineRole", "Arn" ] },
+            "DefinitionString": { "Fn::Sub": "" }
+        }
+    },
+
+    "LambdaRole" : {
+        "Type" : "AWS::IAM::Role",
+        "Properties" : {
+            "AssumeRolePolicyDocument" : {
+                "Version" : "2012-10-17",
+                "Statement" : [
+                    {
+                        "Action" : [
+                            "sts:AssumeRole"
+                        ],
+                        "Effect" : "Allow",
+                        "Principal" : {
+                            "Service" : [
+                                "lambda.amazonaws.com"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "ManagedPolicyArns" : [
+                "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+				"arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
+            ]
+       }
+    },
+
+
+    "StateMachineRole" : {
+        "Type" : "AWS::IAM::Role",
+        "Properties" : {
+            "AssumeRolePolicyDocument" : {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Principal": {
+                    "Service": {"Fn::Sub" : "states.${AWS::Region}.amazonaws.com"}
+                  },
+                  "Action": "sts:AssumeRole"
+                }
+              ]
+            },
+            "Policies" : [{
+                "PolicyName": "StepFunctionLambdaInvoke",
+                "PolicyDocument": {
+                  "Version": "2012-10-17",
+                  "Statement": [
+                    {
+                      "Effect": "Allow",
+                      "Action": [
+                        "lambda:InvokeFunction"
+                      ],
+                      "Resource": "*"
+                    }
+                  ]
+                }
+            }]
+        }
+    }
+
+  },
+
+  "Outputs" : {
+      "TableName" : {
+      "Value" : {"Ref" : "incommingCompansationsDynamoDBTable"},
+      "Description" : "Table name of the newly created DynamoDB table"
+    }
+  }
+}

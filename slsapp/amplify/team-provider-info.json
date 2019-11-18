@@ -1,0 +1,54 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-slsapp-dev-124828-authRole",
+            "UnauthRoleArn": "arn:aws:iam::216788398771:role/amplify-slsapp-dev-124828-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::216788398771:role/amplify-slsapp-dev-124828-authRole",
+            "Region": "eu-west-2",
+            "DeploymentBucketName": "amplify-slsapp-dev-124828-deployment",
+            "UnauthRoleName": "amplify-slsapp-dev-124828-unauthRole",
+            "StackName": "amplify-slsapp-dev-124828",
+            "StackId": "arn:aws:cloudformation:eu-west-2:216788398771:stack/amplify-slsapp-dev-124828/f651eb60-0539-11ea-aecf-0aea06869730"
+        },
+        "categories": {
+            "function": {
+                "slsappc306ff01CustomMessage": {
+                    "REDIRECTURL": "http://dir.bg",
+                    "EMAILSUBJECT": "Zdrasti, tova e qko",
+                    "EMAILMESSAGE": "cukni tuk i shte se validirash"
+                },
+                "slsappc306ff01PreTokenGeneration": {},
+                "mainlambda": {}
+            },
+            "auth": {
+                "slsappc306ff01": {}
+            }
+        }
+    },
+    "featureone": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-slsapp-featureone-104314-authRole",
+            "UnauthRoleArn": "arn:aws:iam::216788398771:role/amplify-slsapp-featureone-104314-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::216788398771:role/amplify-slsapp-featureone-104314-authRole",
+            "Region": "eu-west-2",
+            "DeploymentBucketName": "amplify-slsapp-featureone-104314-deployment",
+            "UnauthRoleName": "amplify-slsapp-featureone-104314-unauthRole",
+            "StackName": "amplify-slsapp-featureone-104314",
+            "StackId": "arn:aws:cloudformation:eu-west-2:216788398771:stack/amplify-slsapp-featureone-104314/213fe140-084d-11ea-bb7d-060395953c4e"
+        },
+        "categories": {
+            "auth": {
+                "slsappc306ff01": {}
+            },
+            "function": {
+                "mainlambda": {},
+                "slsappc306ff01CustomMessage": {
+                    "REDIRECTURL": "",
+                    "EMAILSUBJECT": "featureone env email subject",
+                    "EMAILMESSAGE": "zdrasti tva e featureone env"
+                },
+                "slsappc306ff01PreTokenGeneration": {}
+            }
+        }
+    }
+}
